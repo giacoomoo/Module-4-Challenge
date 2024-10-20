@@ -1,0 +1,104 @@
+:root {
+    --color-bg: #fff;
+    --color-text: #000;
+}
+
+body.dark {
+    --color-bg: #000;
+    --color-text: #fff;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    border-color: var(--color-text);
+
+}
+
+.header button {
+    padding: 5px 15px;
+    background-color: var(--color-text);
+    color: var(--color-bg);
+}
+
+.header .tools {
+    display: flex;
+}
+
+.header .tools span {
+    width: 1.75em;
+    height: 1.75em;
+    margin-left: 5px;
+}
+
+.header .tools span img {
+    width: 100%;
+    height: 100%;
+}
+
+.header img:nth-child(1) {
+    display: none;
+}
+
+.header .sun img:nth-child(2) {
+    display: none;
+}
+
+.header .sun img:nth-child(1) {
+    display: block;
+}
+
+.main {
+    border-bottom: 2px solid var(--color-text);
+    padding: 15px;
+    display: block;
+    height: auto;
+}
+
+.blog {
+    padding: 15px;
+    border: 2px solid var(--color-text);
+    margin-bottom: 15px;
+    height: 10em;
+    position: relative;
+    border-radius: 4px;
+}
+
+.blog h3 {
+    border-bottom: 1px solid var(--color-text);
+}
+
+.blog .sign {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    font-style: italic;
+}
+
+.blog p {
+    padding-left: 1em;
+    font-style: italic;
+    line-height: 2;
+}
+
+
+.footer {
+    border-top: 2px solid var(--color-text);
+    margin-top: 5px;
+    padding: 15px;
+}
+
+.footer h4 {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
